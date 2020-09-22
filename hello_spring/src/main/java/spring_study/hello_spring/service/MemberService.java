@@ -1,8 +1,9 @@
 package spring_study.hello_spring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import spring_study.hello_spring.domain.Member;
 import spring_study.hello_spring.repository.MemberRepository;
-import spring_study.hello_spring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +11,7 @@ import java.util.Optional;
 /**
  * 회원 서비스 개발
  */
+//@Service
 public class MemberService {
 
     /**
@@ -18,6 +20,7 @@ public class MemberService {
      */
     private final MemberRepository memberRepository;
 
+//    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

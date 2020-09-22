@@ -1,16 +1,17 @@
 package spring_study.hello_spring.service;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spring_study.hello_spring.domain.Member;
 import spring_study.hello_spring.repository.MemoryMemberRepository;
 
-import java.util.Optional;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+/**
+ * 테스트의 메소드 이름은 한글로 해도 괜찮다 (더 직관적)
+ */
 
 class MemberServiceTest {
 
