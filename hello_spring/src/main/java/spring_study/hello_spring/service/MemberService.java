@@ -2,6 +2,7 @@ package spring_study.hello_spring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import spring_study.hello_spring.domain.Member;
 import spring_study.hello_spring.repository.MemberRepository;
 
@@ -12,6 +13,8 @@ import java.util.Optional;
  * 회원 서비스 개발
  */
 //@Service
+@Transactional
+// JPA 는 모든 데이터 변경이 트랜잭션 안에서 실행 되어야 함.
 public class MemberService {
 
     /**
